@@ -20,6 +20,11 @@ public class Role {
     private Integer id;
     private String name;
 
+<<<<<<< HEAD
 //    @ManyToMany(mappedBy = "roles")
 //    private Set<User> users;
+=======
+    @ManyToMany(mappedBy = "roles")
+    private Set<User> users;
+>>>>>>> 59c86dd3ad96f5912498130f6da5d1a6403b3172
 }
