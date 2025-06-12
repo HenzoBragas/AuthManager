@@ -8,13 +8,6 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface UserProduct extends JpaRepository<User, Integer> {
-    Optional<User> findyEmail(String email);
-
-    List<User> findByNameContaining(String name);
-
-    List<User> findByStatus(boolean status);
-
-    Optional<User> findByEmailStatus(String email, boolean status);
+public interface UserRepository extends JpaRepository<User, Integer> {
 
 }
